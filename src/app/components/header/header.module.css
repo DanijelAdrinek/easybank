@@ -4,13 +4,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 1.25rem 0;
+  padding-left: clamp(1.5rem, calc(25% - 150px), 204px);
+  padding-right: clamp(2rem, calc(25% - 150px), 174px);
   background-color: var(--background-secondary);
   color: var(--text-primary);
-}
-
-.logoContainer {
-
 }
 
 .nav {
@@ -25,6 +23,8 @@
   margin: 0 15px;
   border-radius: 10px;
 }
+
+.logoContainer { height: 20px; }
 
 .nav.open .navigation {
   display: flex;
@@ -56,7 +56,7 @@ ul.navigation > li > a {
   color: var(--text-secondary);
   padding: 0.625rem 0;
   transition: 0.3s all ease-in-out;
-  font-size: var(--navigation-text-size);
+  font-size: var(--navigation-text-size-mobile);
 }
 
 ul.navigation > li > a:hover {
@@ -68,7 +68,7 @@ ul.navigation > li > a:hover {
   flex-direction: column;
   justify-content: space-around;
   width: 30px;
-  height: 30px;
+  height: 20px;
   background: transparent;
   border: none;
   cursor: pointer;
@@ -115,8 +115,23 @@ ul.navigation > li > a:hover {
     display: none;
   }
 
+  .nav {
+    position: relative;
+    top: 0;
+    background-color: transparent;
+  }
+
   .navigation {
     display: flex;
+    padding: 0;
+    width: max-content;
+    flex-direction: row;
+    gap: 0;
+  }
+
+  ul.navigation > li > a {
+    padding: 0.5rem 1rem;
+    font-size: var(--navigation-text-size-desktop);
   }
   
 }

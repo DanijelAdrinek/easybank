@@ -1,0 +1,11 @@
+.button {
+    font-size: var(--button-text-size);
+    border-radius: 50px;
+    border: none;
+}
+
+.small { padding: 0.4rem 1rem; }
+
+.medium { padding: 0.8125rem 2rem; }
+
+.big { padding: 1.21875 3rem;}

@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import styles from './header.module.css';
 import Image from 'next/image'; 
 import logo from '$public/images/logo.svg';
+import Button from '../button/button';
 
 const altText = 'easybank logo';
 
@@ -27,9 +28,10 @@ const Header = () => {
             ))}
         </ul>
       </nav>
-      <button onClick={toggleMenu} className={`${styles['menu-btn-container']}`}>
+      <button onClick={toggleMenu} className={`${styles['menu-btn-container']} not_tablet not_desktop`}>
         <div className={`${styles['menu-btn']}`}></div>
       </button>
+      <Button additionalClasses={['not_mobile']} />
     </header>
   );
 };
