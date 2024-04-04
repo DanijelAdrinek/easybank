@@ -1,0 +1,15 @@
+.container { width: 100%; }
+
+.imageContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1.393;
+}
+
+.imageContainer > img {
+    position: absolute;
+    width: 100%;
+    height: auto;
+    left: 50%;
+    transform: translateX(-50%);
+}

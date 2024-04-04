@@ -1,0 +1,27 @@
+:root {
+    --background-primary: #FAFAFA;
+    --background-secondary: #FFFFFF;
+
+    --text-primary: #2D314D;
+    --text-secondary: #9698A6;
+
+    --details-primary: #2D314D;
+    --details-secondary: #9698A6;
+
+    --hover-color: #F0F0F0;
+
+
+    --navigation-text-size: 1.5rem;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
